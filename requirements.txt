@@ -1,0 +1,1 @@
+# TpRecursividad — solo stdlib; archivo por si luego añadís pruebas (pytest) o tipado estricto.
