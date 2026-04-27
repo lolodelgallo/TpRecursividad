@@ -14,17 +14,14 @@ _VALORES = {
 }
 
 
-def _valor_simbolo(c: str) -> int:
+def _valor_simbolo(c):
     if c not in _VALORES:
         raise ValueError(f"Carácter no válido en romano: {c!r}")
     return _VALORES[c]
 
 
-def romano_a_decimal(romano: str) -> int:
-    """
-    Convierte una cadena en notación romana a entero (base 10).
-    Soporta notación clásica con resta (IV, IX, etc.).
-    """
+def romano_a_decimal(romano):
+    """Convierte notación romana a entero (notación con resta: IV, IX, etc.)."""
     if not romano or not romano.isalpha():
         raise ValueError("Se esperaba un número romano no vacío (letras I, V, X, L, C, D, M).")
 
